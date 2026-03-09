@@ -38,7 +38,7 @@ export const Header: React.FC = () => {
           : 'bg-transparent'
       )}
     >
-      <div className="container mx-auto px-6 lg:px-8">
+      <div className="container">
         <div className="flex items-center justify-between h-[90px]">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
@@ -124,7 +124,7 @@ export const Header: React.FC = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white border-t border-sand">
-          <nav className="container mx-auto px-4 py-6 flex flex-col space-y-4">
+          <nav className="container py-6 flex flex-col space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}

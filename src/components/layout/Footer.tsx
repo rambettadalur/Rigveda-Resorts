@@ -6,7 +6,7 @@ import { MapPin, Phone, Mail, Facebook, Instagram, Twitter } from 'lucide-react'
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-stone-dark text-white">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* About Section */}
           <div>
