@@ -10,7 +10,7 @@ export default function BookPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative h-[30vh] sm:h-[35vh] flex items-center justify-center bg-gradient-to-r from-bronze to-gold mt-20">
+      <section className="relative h-[30vh] sm:h-[35vh] flex items-center justify-center bg-gradient-to-r from-bronze to-gold pt-[90px]">
         <div className="absolute inset-0 bg-black/20" />
         <div className="relative z-10 text-center text-white px-6 lg:px-8">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight">
