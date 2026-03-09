@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X, Phone } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { cn } from '@/lib/utils'
@@ -41,24 +42,14 @@ export const Header: React.FC = () => {
         <div className="flex items-center justify-between h-[90px]">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="text-xl font-display font-bold tracking-wide">
-              <span
-                className={cn(
-                  'transition-colors duration-300',
-                  isScrolled ? 'text-bronze' : 'text-white'
-                )}
-              >
-                Rigveda
-              </span>
-              <span
-                className={cn(
-                  'ml-2 transition-colors duration-300',
-                  isScrolled ? 'text-stone-dark' : 'text-white'
-                )}
-              >
-                Resorts
-              </span>
-            </div>
+            <Image
+              src={isScrolled ? '/logo-black.png' : '/logo-white.png'}
+              alt="Rigveda Resorts"
+              width={140}
+              height={50}
+              className="h-10 w-auto transition-opacity duration-300"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

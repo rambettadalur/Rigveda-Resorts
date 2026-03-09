@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { MapPin, Phone, Mail, Facebook, Instagram, Twitter } from 'lucide-react'
 
 export const Footer: React.FC = () => {
@@ -9,9 +10,13 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* About Section */}
           <div>
-            <h3 className="text-2xl font-display font-bold mb-4">
-              <span className="text-bronze">Rigveda</span> Resorts
-            </h3>
+            <Image
+              src="/logo-white.png"
+              alt="Rigveda Resorts"
+              width={140}
+              height={50}
+              className="h-10 w-auto mb-4"
+            />
             <p className="text-sm text-stone-light leading-relaxed">
               Experience luxury amidst heritage. Located near the magnificent Hoysala temples of
               Belur and Halebidu, Rigveda Resorts offers a perfect blend of culture, nature, and
