@@ -16,21 +16,13 @@ export const Hero: React.FC = () => {
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video (Placeholder - replace with actual resort video) */}
+      {/* Background Image */}
       <div className="absolute inset-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1920&h=1080&fit=crop&q=80"
+        <img
+          src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1920&h=1080&fit=crop&q=80"
+          alt="Rigveda Resorts"
           className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source
-            src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
-            type="video/mp4"
-          />
-        </video>
+        />
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-black/40" />
         <MandalaBg size={520} opacity={0.05} className="-top-20 -right-20 text-gold" />
