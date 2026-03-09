@@ -1,0 +1,68 @@
+import { Testimonial } from '@/types'
+
+export const testimonials: Testimonial[] = [
+  {
+    id: '1',
+    name: 'Priya & Rahul Mehta',
+    location: 'Bangalore, Karnataka',
+    rating: 5,
+    review: 'Our stay at Rigveda Resorts was absolutely magical. The Heritage Villa was beautifully designed with perfect blend of traditional and modern. The temple tour was the highlight - our guide was incredibly knowledgeable. We learned so much about Hoysala architecture. Can\'t wait to return!',
+    date: '2026-02-15',
+  },
+  {
+    id: '2',
+    name: 'Amit Singh',
+    location: 'Mumbai, Maharashtra',
+    rating: 5,
+    review: 'Perfect weekend getaway from the city chaos. The resort is peaceful, staff is courteous, and the food is delicious. The bird watching experience was phenomenal - spotted over 30 species! Highly recommend for nature lovers.',
+    date: '2026-01-28',
+  },
+  {
+    id: '3',
+    name: 'Sarah Johnson',
+    location: 'London, UK',
+    rating: 5,
+    review: 'During our India trip, Rigveda Resorts was one of our favorite stays. The attention to detail, the cultural experiences, and the serene environment made it special. The village walk gave us authentic insights into rural Karnataka life. Thank you for the warm hospitality!',
+    date: '2025-12-10',
+  },
+  {
+    id: '4',
+    name: 'Kavita Sharma',
+    location: 'Delhi',
+    rating: 5,
+    review: 'Came here for our anniversary and it exceeded all expectations. The romantic setup, candlelight dinner under the stars, and the peaceful ambiance made it unforgettable. The staff went above and beyond to make our celebration special.',
+    date: '2026-02-02',
+  },
+  {
+    id: '5',
+    name: 'Rajesh & Family',
+    location: 'Hyderabad, Telangana',
+    rating: 5,
+    review: 'Traveled with our two kids and elderly parents. The Family Suite was spacious and comfortable. All activities were well-organized. Kids loved the coffee plantation tour. The resort is perfect for multi-generational family trips. Will definitely visit again!',
+    date: '2026-01-15',
+  },
+  {
+    id: '6',
+    name: 'Michael Chen',
+    location: 'Singapore',
+    rating: 4,
+    review: 'Beautiful property with excellent service. The rooms are well-appointed and clean. The Hoysala temples nearby are absolutely stunning - a must-visit. Only wish we had more time to explore all the experiences offered. Great value for money.',
+    date: '2025-12-20',
+  },
+  {
+    id: '7',
+    name: 'Deepa Krishnan',
+    location: 'Chennai, Tamil Nadu',
+    rating: 5,
+    review: 'The yoga and wellness package was exactly what I needed. Daily morning yoga sessions in the garden, spa treatments, and healthy meals left me feeling completely rejuvenated. The peaceful environment and attentive staff made the experience perfect.',
+    date: '2026-02-20',
+  },
+  {
+    id: '8',
+    name: 'Arjun Verma',
+    location: 'Pune, Maharashtra',
+    rating: 5,
+    review: 'As a photography enthusiast, this place is a dream. The landscapes, the architecture, the wildlife - every frame is picture-perfect. The early morning bird watching session and wildlife safari gave me amazing shots. Staff was very accommodating of my photography needs.',
+    date: '2026-01-05',
+  },
+]
