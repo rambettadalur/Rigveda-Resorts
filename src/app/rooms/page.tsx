@@ -27,20 +27,20 @@ export default function RoomsPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative h-[50vh] flex items-center justify-center bg-gradient-to-r from-stone-dark to-stone-medium">
+      <section className="relative h-[40vh] sm:h-[50vh] flex items-center justify-center bg-gradient-to-r from-stone-dark to-stone-medium">
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 text-center text-white px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight">
             Rooms & Suites
           </h1>
-          <p className="text-lg text-cream max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-cream max-w-2xl mx-auto">
             Experience comfort and luxury in our thoughtfully designed accommodations
           </p>
         </div>
       </section>
 
       {/* Rooms Listing */}
-      <section className="py-24 lg:py-28 bg-cream">
+      <section className="py-12 sm:py-16 lg:py-24 bg-cream">
         <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
           {/* Category Filters */}
           <FilterBar

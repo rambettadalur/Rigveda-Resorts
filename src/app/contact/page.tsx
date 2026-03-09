@@ -5,10 +5,10 @@ export default function ContactPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative h-[40vh] flex items-center justify-center bg-gradient-to-r from-stone-dark to-bronze">
+      <section className="relative h-[35vh] sm:h-[40vh] flex items-center justify-center bg-gradient-to-r from-stone-dark to-bronze">
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 text-center text-white px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight">
             Get in Touch
           </h1>
           <p className="text-lg text-cream">
@@ -18,11 +18,11 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 lg:py-28 bg-cream">
+      <section className="py-12 sm:py-16 lg:py-24 bg-cream">
         <div className="container mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
             {/* Left Column - Contact Form */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
+            <div className="bg-white p-5 sm:p-8 rounded-lg shadow-lg">
               <h2 className="text-2xl font-display font-semibold text-stone-dark mb-6">
                 Send Us a Message
               </h2>
@@ -31,7 +31,7 @@ export default function ContactPage() {
 
             {/* Right Column - Contact Information */}
             <div>
-              <div className="bg-white p-8 rounded-lg shadow-lg mb-6">
+              <div className="bg-white p-5 sm:p-8 rounded-lg shadow-lg mb-6">
                 <h2 className="text-2xl font-display font-semibold text-stone-dark mb-6">
                   Contact Information
                 </h2>
@@ -108,7 +108,7 @@ export default function ContactPage() {
               </div>
 
               {/* Map Placeholder */}
-              <div className="bg-white p-8 rounded-lg shadow-lg">
+              <div className="bg-white p-5 sm:p-8 rounded-lg shadow-lg">
                 <h2 className="text-2xl font-display font-semibold text-stone-dark mb-4">
                   Location
                 </h2>

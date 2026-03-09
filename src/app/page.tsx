@@ -31,7 +31,7 @@ export default function Home() {
       <MandalaDivider className="py-1" />
 
       {/* Rooms Section */}
-      <section className="py-24 lg:py-28 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
           <SectionHeading
             subtitle="Accommodations"
@@ -56,14 +56,14 @@ export default function Home() {
       <MandalaDivider className="py-1" />
 
       {/* Experiences Section */}
-      <section className="py-24 lg:py-28 bg-sand">
+      <section className="py-12 sm:py-16 lg:py-24 bg-sand">
         <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
           <SectionHeading
             subtitle="Discover"
             title="Curated Experiences"
             align="center"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 mb-10 sm:mb-12">
             {featuredExperiences.map((experience) => (
               <ExperienceCard key={experience.slug} experience={experience} />
             ))}
@@ -81,7 +81,7 @@ export default function Home() {
       <MandalaDivider className="py-1" />
 
       {/* Packages Section */}
-      <section className="py-24 lg:py-28 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
           <SectionHeading
             subtitle="Special Offers"
@@ -106,7 +106,7 @@ export default function Home() {
       <MandalaDivider className="py-1" />
 
       {/* Location Highlight */}
-      <section className="py-24 lg:py-28 bg-cream">
+      <section className="py-12 sm:py-16 lg:py-24 bg-cream">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <SectionHeading

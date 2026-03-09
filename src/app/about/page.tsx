@@ -8,18 +8,18 @@ export default function AboutPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative h-[60vh] flex items-center justify-center bg-gradient-to-r from-stone-dark via-bronze to-forest">
+      <section className="relative h-[40vh] sm:h-[50vh] md:h-[60vh] flex items-center justify-center bg-gradient-to-r from-stone-dark via-bronze to-forest">
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight">About Us</h1>
-          <p className="text-lg text-cream max-w-3xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight">About Us</h1>
+          <p className="text-base sm:text-lg text-cream max-w-3xl mx-auto">
             Where ancient heritage meets modern luxury in the heart of Karnataka
           </p>
         </div>
       </section>
 
       {/* Our Story */}
-      <section className="py-24 lg:py-28 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-8 max-w-4xl">
           <SectionHeading subtitle="Our Story" title="Welcome to Rigveda Resorts" align="center" />
           <div className="space-y-4 text-stone-medium leading-relaxed">
@@ -44,13 +44,13 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-      <section className="py-24 lg:py-28 bg-cream">
+      <section className="py-12 sm:py-16 lg:py-24 bg-cream">
         <div className="container mx-auto px-6 lg:px-8">
           <SectionHeading subtitle="Our Values" title="What We Stand For" align="center" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-6xl mx-auto">
             <div className="text-center">
-              <div className="w-20 h-20 bg-bronze rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart size={32} className="text-white" />
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-bronze rounded-full flex items-center justify-center mx-auto mb-4">
+                <Heart size={28} className="text-white" />
               </div>
               <h3 className="text-xl font-display font-semibold text-stone-dark mb-3">
                 Hospitality
@@ -60,8 +60,8 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-bronze rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award size={32} className="text-white" />
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-bronze rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award size={28} className="text-white" />
               </div>
               <h3 className="text-xl font-display font-semibold text-stone-dark mb-3">
                 Excellence
@@ -71,8 +71,8 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-bronze rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users size={32} className="text-white" />
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-bronze rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users size={28} className="text-white" />
               </div>
               <h3 className="text-xl font-display font-semibold text-stone-dark mb-3">
                 Community
@@ -82,8 +82,8 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-bronze rounded-full flex items-center justify-center mx-auto mb-4">
-                <Leaf size={32} className="text-white" />
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-bronze rounded-full flex items-center justify-center mx-auto mb-4">
+                <Leaf size={28} className="text-white" />
               </div>
               <h3 className="text-xl font-display font-semibold text-stone-dark mb-3">
                 Sustainability
@@ -99,7 +99,7 @@ export default function AboutPage() {
       {/* Location Advantage */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
             <div>
               <h2 className="text-3xl font-display font-semibold text-stone-dark mb-6">
                 The Perfect Location
@@ -129,7 +129,7 @@ export default function AboutPage() {
                 </ul>
               </div>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+            <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-xl">
               <img
                 src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=900&h=600&fit=crop&q=80"
                 alt="Rigveda Resorts location"
@@ -143,7 +143,7 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-bronze to-stone-medium text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-display font-semibold mb-6">
+          <h2 className="text-3xl sm:text-4xl font-display font-semibold mb-6">
             Begin Your Journey with Us
           </h2>
           <p className="text-xl text-cream mb-8 max-w-2xl mx-auto">

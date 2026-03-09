@@ -24,7 +24,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
   }
 
   return (
-    <div className={cn('mb-16', alignmentClasses[align], className)}>
+    <div className={cn('mb-8 sm:mb-12 lg:mb-16', alignmentClasses[align], className)}>
       {subtitle && (
         <p className="text-bronze uppercase tracking-[3px] text-xs font-medium mb-2">
           {subtitle}
@@ -35,7 +35,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
           <MandalaOrn size={36} className="text-bronze opacity-60" />
         </div>
       )}
-      <h2 className="text-3xl md:text-4xl font-display font-semibold text-stone-dark leading-tight">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-semibold text-stone-dark leading-tight">
         {title}
       </h2>
     </div>

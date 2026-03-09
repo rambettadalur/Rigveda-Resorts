@@ -9,13 +9,13 @@ export default function DiningPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative h-[50vh] flex items-center justify-center bg-gradient-to-r from-stone-medium to-gold">
+      <section className="relative h-[40vh] sm:h-[50vh] flex items-center justify-center bg-gradient-to-r from-stone-medium to-gold">
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 text-center text-white px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight">
             Dining Experience
           </h1>
-          <p className="text-lg text-cream max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-cream max-w-2xl mx-auto">
             Savor authentic flavors in a serene setting
           </p>
         </div>
@@ -36,9 +36,9 @@ export default function DiningPage() {
       </section>
 
       {/* Dining Options */}
-      <section className="py-24 lg:py-28 bg-cream">
+      <section className="py-12 sm:py-16 lg:py-24 bg-cream">
         <div className="container mx-auto px-6 lg:px-8">
-          <div className="space-y-12 max-w-6xl mx-auto">
+          <div className="space-y-10 sm:space-y-12 max-w-6xl mx-auto">
             {diningOptions.map((option, index) => (
               <div
                 key={index}
@@ -48,7 +48,7 @@ export default function DiningPage() {
               >
                 {/* Image */}
                 <div
-                  className={`relative h-80 rounded-lg overflow-hidden shadow-lg ${
+                  className={`relative h-64 sm:h-80 rounded-lg overflow-hidden shadow-lg ${
                     index % 2 === 1 ? 'lg:order-2' : ''
                   }`}
                 >

@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="text-4xl md:text-5xl font-display font-semibold text-white mb-8 italic leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold text-white mb-8 italic leading-tight">
             Where Heritage Meets Serenity
           </h1>
         </motion.div>

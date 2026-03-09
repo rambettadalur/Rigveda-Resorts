@@ -35,13 +35,13 @@ export default function ExperiencesPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative h-[50vh] flex items-center justify-center bg-gradient-to-r from-forest to-bronze">
+      <section className="relative h-[40vh] sm:h-[50vh] flex items-center justify-center bg-gradient-to-r from-forest to-bronze">
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 text-center text-white px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight">
             Experiences & Packages
           </h1>
-          <p className="text-lg text-cream max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-cream max-w-2xl mx-auto">
             Discover curated journeys and all-inclusive packages in the heart of Karnataka
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function ExperiencesPage() {
       {/* Experiences Tab */}
       {activeTab === 'experiences' && (
         <>
-          <section className="py-24 lg:py-28 bg-cream">
+          <section className="py-12 sm:py-16 lg:py-24 bg-cream">
             <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
               {/* Category Filters */}
               <FilterBar
@@ -118,9 +118,9 @@ export default function ExperiencesPage() {
       {/* Packages Tab */}
       {activeTab === 'packages' && (
         <>
-          <section className="py-24 lg:py-28 bg-cream">
+          <section className="py-12 sm:py-16 lg:py-24 bg-cream">
             <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
-              <div className="max-w-5xl mx-auto mb-12 text-center">
+              <div className="max-w-5xl mx-auto mb-8 sm:mb-12 text-center">
                 <p className="text-stone-medium leading-relaxed">
                   Our curated packages combine luxurious accommodation, authentic experiences, and exceptional service.
                   Each package can be customized to suit your preferences and travel dates.

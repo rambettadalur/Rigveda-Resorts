@@ -47,7 +47,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
       </div>
 
       {/* Package Header */}
-      <section className="relative h-[50vh] flex items-end">
+      <section className="relative h-[40vh] sm:h-[50vh] flex items-end">
         <div className="absolute inset-0 bg-gradient-to-br from-bronze to-gold">
           {/* Placeholder - replace with actual image */}
         </div>
@@ -58,7 +58,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
               {pkg.badge}
             </span>
           )}
-          <h1 className="text-4xl md:text-5xl font-display font-semibold text-white mb-2">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold text-white mb-2">
             {pkg.title}
           </h1>
           <p className="text-xl text-cream">{pkg.subtitle}</p>
@@ -180,12 +180,12 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="sticky top-24 bg-cream p-6 rounded-lg shadow-lg">
+              <div className="sticky top-24 bg-cream p-4 sm:p-6 rounded-lg shadow-lg">
                 {/* Pricing */}
                 {pkg.priceFrom && (
                   <div className="mb-6 pb-6 border-b border-sand">
                     <p className="text-sm text-stone-medium mb-1">Starting from</p>
-                    <p className="text-4xl font-display font-bold text-bronze mb-1">
+                    <p className="text-3xl sm:text-4xl font-display font-bold text-bronze mb-1">
                       {pkg.priceFrom}
                     </p>
                     <p className="text-xs text-stone-medium">

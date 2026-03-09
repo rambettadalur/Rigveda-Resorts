@@ -46,7 +46,7 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
             {/* Left Column - Images */}
             <div className="lg:col-span-2">
               {/* Main Image */}
-              <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden mb-4">
+              <div className="relative h-56 sm:h-80 md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden mb-4">
                 <img
                   src={room.featuredImage}
                   alt={room.name}
@@ -55,7 +55,7 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
               </div>
 
               {/* Gallery */}
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4">
                 {room.gallery.slice(0, 3).map((image, index) => (
                   <div
                     key={index}
@@ -115,14 +115,14 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
 
             {/* Right Column - Booking Info */}
             <div className="lg:col-span-1">
-              <div className="sticky top-24 bg-cream p-6 rounded-lg shadow-lg">
+              <div className="sticky top-24 bg-cream p-4 sm:p-6 rounded-lg shadow-lg">
                 <div className="mb-4">
                   <span className="inline-block px-3 py-1 bg-bronze text-white text-xs font-medium rounded-full uppercase">
                     {room.category}
                   </span>
                 </div>
 
-                <h1 className="text-3xl font-display font-semibold text-stone-dark mb-2">
+                <h1 className="text-2xl sm:text-3xl font-display font-semibold text-stone-dark mb-2">
                   {room.name}
                 </h1>
                 <p className="text-stone-medium italic mb-6">{room.tagline}</p>

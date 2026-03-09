@@ -47,7 +47,7 @@ export default async function ExperienceDetailPage({ params }: { params: Promise
       </div>
 
       {/* Experience Hero */}
-      <section className="relative h-[60vh] flex items-end">
+      <section className="relative h-[45vh] sm:h-[55vh] md:h-[60vh] flex items-end">
         <div className="absolute inset-0 bg-gradient-to-br from-stone-dark to-bronze">
           {/* Placeholder - replace with actual image */}
         </div>
@@ -60,7 +60,7 @@ export default async function ExperienceDetailPage({ params }: { params: Promise
           >
             {experience.category}
           </span>
-          <h1 className="text-4xl md:text-5xl font-display font-semibold text-white mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold text-white mb-4">
             {experience.title}
           </h1>
           <p className="text-xl text-cream italic max-w-2xl">
@@ -174,7 +174,7 @@ export default async function ExperienceDetailPage({ params }: { params: Promise
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="sticky top-24 bg-cream p-6 rounded-lg shadow-lg">
+              <div className="sticky top-24 bg-cream p-4 sm:p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-display font-semibold text-stone-dark mb-4">
                   Book This Experience
                 </h3>
@@ -233,7 +233,7 @@ export default async function ExperienceDetailPage({ params }: { params: Promise
             <h2 className="text-3xl font-display font-semibold text-stone-dark mb-8 text-center">
               More {experience.category.charAt(0).toUpperCase() + experience.category.slice(1)} Experiences
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
               {relatedExperiences.map((relatedExp) => (
                 <ExperienceCard key={relatedExp.slug} experience={relatedExp} />
               ))}

@@ -58,22 +58,22 @@ export default function AmenitiesPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative h-[50vh] flex items-center justify-center bg-gradient-to-r from-forest to-bronze">
+      <section className="relative h-[40vh] sm:h-[50vh] flex items-center justify-center bg-gradient-to-r from-forest to-bronze">
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 text-center text-white px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight">
             Resort Amenities
           </h1>
-          <p className="text-lg text-cream max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-cream max-w-2xl mx-auto">
             World-class facilities for an unforgettable stay
           </p>
         </div>
       </section>
 
       {/* Amenities Grid */}
-      <section className="py-24 lg:py-28 bg-cream">
+      <section className="py-12 sm:py-16 lg:py-24 bg-cream">
         <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {amenities.map((amenity) => (
               <AmenityCard key={amenity.slug} amenity={amenity} />
             ))}
