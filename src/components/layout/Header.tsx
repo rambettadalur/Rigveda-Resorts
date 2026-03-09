@@ -50,13 +50,9 @@ export const Header: React.FC = () => {
               className="h-10 w-auto transition-opacity duration-300"
               priority
             />
-            <div className="text-xl font-display font-bold tracking-wide leading-tight">
-              <span className={cn('block transition-colors duration-300', isScrolled ? 'text-bronze' : 'text-white')}>
-                Rigveda
-              </span>
-              <span className={cn('block transition-colors duration-300', isScrolled ? 'text-stone-dark' : 'text-white')}>
-                Resorts
-              </span>
+            <div className="text-xl font-display font-bold tracking-wide whitespace-nowrap">
+              <span className={cn('transition-colors duration-300', isScrolled ? 'text-bronze' : 'text-white')}>Rigveda</span>
+              <span className={cn('ml-2 transition-colors duration-300', isScrolled ? 'text-stone-dark' : 'text-white')}>Resorts</span>
             </div>
           </Link>
 
