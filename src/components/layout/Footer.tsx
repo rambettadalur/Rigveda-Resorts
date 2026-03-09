@@ -10,13 +10,18 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* About Section */}
           <div>
-            <Image
-              src="/logo-white.png"
-              alt="Rigveda Resorts"
-              width={140}
-              height={50}
-              className="h-10 w-auto mb-4"
-            />
+            <div className="flex items-center gap-3 mb-4">
+              <Image
+                src="/logo-white.png"
+                alt="Rigveda Resorts"
+                width={140}
+                height={50}
+                className="h-10 w-auto"
+              />
+              <h3 className="text-2xl font-display font-bold">
+                <span className="text-bronze">Rigveda</span> Resorts
+              </h3>
+            </div>
             <p className="text-sm text-stone-light leading-relaxed">
               Experience luxury amidst heritage. Located near the magnificent Hoysala temples of
               Belur and Halebidu, Rigveda Resorts offers a perfect blend of culture, nature, and

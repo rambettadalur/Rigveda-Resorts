@@ -41,7 +41,7 @@ export const Header: React.FC = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-[90px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center gap-3">
             <Image
               src={isScrolled ? '/logo-black.png' : '/logo-white.png'}
               alt="Rigveda Resorts"
@@ -50,6 +50,14 @@ export const Header: React.FC = () => {
               className="h-10 w-auto transition-opacity duration-300"
               priority
             />
+            <div className="text-xl font-display font-bold tracking-wide leading-tight">
+              <span className={cn('block transition-colors duration-300', isScrolled ? 'text-bronze' : 'text-white')}>
+                Rigveda
+              </span>
+              <span className={cn('block transition-colors duration-300', isScrolled ? 'text-stone-dark' : 'text-white')}>
+                Resorts
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
